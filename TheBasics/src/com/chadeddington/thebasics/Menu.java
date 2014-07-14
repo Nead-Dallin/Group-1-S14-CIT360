@@ -17,8 +17,6 @@ public class Menu extends Activity{
 		
 		//button sound
 		final MediaPlayer buttonSound = MediaPlayer.create(Menu.this, R.raw.buttonsound);
-		
-		//First Button
 		Button newView1 = (Button) findViewById(R.id.new_view1);
 		newView1.setOnClickListener(new View.OnClickListener() {
 			
@@ -28,18 +26,6 @@ public class Menu extends Activity{
 				buttonSound.start();
 				startActivity(new Intent("com.chadeddington.thebasics.NEW_VIEW1"));
 				
-			}
-		});
-		
-		//Second Button
-		Button newView2 = (Button) findViewById(R.id.new_view2);
-		newView2.setOnClickListener(new View.OnClickListener() {			
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				buttonSound.start();
-				startActivity(new Intent("com.chadeddington.thebasics.NEW_VIEW2"));
 			}
 		});
 	}
